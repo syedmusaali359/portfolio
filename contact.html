@@ -39,11 +39,7 @@
 </head>
 
 <body class="contact">
-<!-- Live Style Switcher Starts - demo only -->
 
-</div>
-
-<!-- Live Style Switcher Ends - demo only -->
 <!-- Header Starts -->
 <header class="header" id="navbar-collapse-toggle">
     <!-- Fixed Navigation Starts -->
@@ -72,39 +68,18 @@
                 <h2>Contact</h2>
             </a>
         </li>
-        <!---
-        <li class="icon-box">
-            <i class="fa fa-comments"></i>
-            <a href="blog.html">
-                <h2>Blog</h2>
-            </a>
-        </li>-->
     </ul>
     <!-- Fixed Navigation Ends -->
-    <!-- Mobile Menu Starts -->
-    <nav role="navigation" class="d-block d-lg-none">
-        <div id="menuToggle">
-            <input type="checkbox">
-            <span></span>
-            <span></span>
-            <span></span>
-            <ul class="list-unstyled" id="menu">
-                <li><a href="index.html"><i class="fa fa-home"></i><span>Home</span></a></li>
-                <li><a href="about.html"><i class="fa fa-user"></i><span>About</span></a></li>
-                <li><a href="portfolio.html"><i class="fa fa-folder-open"></i><span>Portfolio</span></a></li>
-                <li class="active"><a href="contact.html"><i class="fa fa-envelope-open"></i><span>Contact</span></a></li>
-                <!-- <li><a href="blog.html"><i class="fa fa-comments"></i><span>Blog</span></a></li>-->            </ul>
-        </div>
-    </nav>
-    <!-- Mobile Menu Ends -->
 </header>
 <!-- Header Ends -->
+
 <!-- Page Title Starts -->
 <section class="title-section text-left text-sm-center revealator-slideup revealator-once revealator-delay1">
     <h1>get in <span>touch</span></h1>
     <span class="title-bg">contact</span>
 </section>
 <!-- Page Title Ends -->
+
 <!-- Main Content Starts -->
 <section class="main-content revealator-slideup revealator-once revealator-delay1">
     <div class="container">
@@ -122,30 +97,28 @@
                     <span class="d-block">call me</span>+923314666427
                 </p>
                 <ul class="social list-unstyled pt-1 mb-5">
-                    <li class="github"><a title="Github" href="https://github.com/syedmusaali359"><i class="fa fa-github"></i></a>
-                    </li>
-                    <li class="linkedin"><a title="LinkedIn" href="https://www.linkedin.com/in/syed-musa-ali-b15457221/"><i class="fa fa-linkedin"></i></a>
-                    </li>
-                  
+                    <li class="github"><a title="Github" href="https://github.com/syedmusaali359"><i class="fa fa-github"></i></a></li>
+                    <li class="linkedin"><a title="LinkedIn" href="https://www.linkedin.com/in/syed-musa-ali-b15457221/"><i class="fa fa-linkedin"></i></a></li>
                 </ul>
             </div>
             <!-- Left Side Ends -->
+
             <!-- Contact Form Starts -->
             <div class="col-12 col-lg-8">
-                <form class="contactform" method="POST" action="https://formsubmit.co/el/hakavu">
+                <form id="contactform" class="contactform" method="POST" action="https://formspree.io/f/mdkkvlag">
                     <div class="contactform">
                         <div class="row">
                             <div class="col-12 col-md-4">
-                                <input type="text" name="name" placeholder="YOUR NAME">
+                                <input id="name" type="text" name="name" placeholder="YOUR NAME" required>
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="email" name="email" placeholder="YOUR EMAIL">
+                                <input id="email" type="email" name="email" placeholder="YOUR EMAIL" required>
                             </div>
                             <div class="col-12 col-md-4">
-                                <input type="text" name="subject" placeholder="YOUR SUBJECT">
+                                <input id="subject" type="text" name="subject" placeholder="YOUR SUBJECT" required>
                             </div>
                             <div class="col-12">
-                                <textarea name="message" placeholder="YOUR MESSAGE"></textarea>
+                                <textarea id="message" name="message" placeholder="YOUR MESSAGE" required></textarea>
                                 <button type="submit" class="button">
                                     <span class="button-text">Send Message</span>
                                     <span class="button-icon fa fa-send"></span>
@@ -161,8 +134,9 @@
             <!-- Contact Form Ends -->
         </div>
     </div>
-
 </section>
+<!-- Main Content Ends -->
+
 <!-- Template JS Files -->
 <script src="js/jquery-3.5.0.min.js"></script>
 <script src="js/styleswitcher.js"></script>
@@ -176,6 +150,13 @@
 <script src="js/popper.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/custom.js"></script>
+<script src="js/contact.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        submitForm();  // Initialize form submission logic
+        });
+</script>
 
 </body>
 
