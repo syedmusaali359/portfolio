@@ -17,7 +17,7 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     // Set the start date of your professional career
-    const startDate = '2021-04-04'; // 4th April 2021
+    const startDate = '2022-06-04'; // 4th April 2022
 
     // Calculate the years of experience
     const experience = calculateExperience(startDate);
